@@ -2,53 +2,61 @@ mysql:
   host: 'localhost'
   port: 3306
   #База данных
-  dreamsait:
-    user: ''
-    password: ''
+  databases:
+    dreamsait:
+      user: ''
+      password: ''
 
 get-from:
   #Базы данных
   dreamsait:
-    #Таблицы
-    AD_GOODS:
-      #Любое ебаное название....
-      govnoedka:
-        #SELECT `cost` FROM `dreamsait`.`AD_GOODS` WHERE `id`=1;
-        select: 'cost'
-        where-what: 'id'
-        where-equals: '1'
-      pizdabolka:
-        select: 'cost'
-        where-what: 'id'
-        where-equals: '2'
-      chlennik:
-        select: 'cost'
-        where-what: 'id'
-        where-equals: '3'
-      syka:
-        select: 'cost'
-        where-what: 'id'
-        where-equals: '4'
-      ebal:
-        select: 'cost'
-        where-what: 'id'
-        where-equals: '5'
-      rot:
-        select: 'cost'
-        where-what: 'id'
-        where-equals: '6'
-      sex:
-        select: 'cost'
-        where-what: 'id'
-        where-equals: '7'
-      elephant:
-        select: 'cost'
-        where-what: 'id'
-        where-equals: '8'
-      kit:
-        select: 'cost'
-        where-what: 'id'
-        where-equals: '9'
+    #Любое ебаное название....
+    govnoedka:
+      #SELECT `cost` FROM `dreamsait`.`AD_GOODS` WHERE `id`=1;
+      table: 'AD_GOODS'
+      select: 'cost'
+      where-what: 'id'
+      where-equals: '1'
+    pizdabolka:
+      table: 'AD_GOODS'
+      select: 'cost'
+      where-what: 'id'
+      where-equals: '2'
+    chlennik:
+      table: 'AD_GOODS'
+      select: 'cost'
+      where-what: 'id'
+      where-equals: '3'
+    syka:
+      table: 'AD_GOODS'
+      select: 'cost'
+      where-what: 'id'
+      where-equals: '4'
+    ebal:
+      table: 'AD_GOODS'
+      select: 'cost'
+      where-what: 'id'
+      where-equals: '5'
+    rot:
+      table: 'AD_GOODS'
+      select: 'cost'
+      where-what: 'id'
+      where-equals: '6'
+    sex:
+      table: 'AD_GOODS'
+      select: 'cost'
+      where-what: 'id'
+      where-equals: '7'
+    elephant:
+      table: 'AD_GOODS'
+      select: 'cost'
+      where-what: 'id'
+      where-equals: '8'
+    kit:
+      table: 'AD_GOODS'
+      select: 'cost'
+      where-what: 'id'
+      where-equals: '9'
 
 #Ответы от запросов свыше
 answers:
