@@ -1,0 +1,7 @@
+name: DTMySQLPlaceholders
+version: ${project.version}
+main: ru.yiaaanni.dreamtime.dtmysqlplaceholders.DTMySQLPlaceholders
+depend: [PlaceholdersAPI]
+authors: [yiaaanni]
+description: Copy items from MySQL to config.yml and put them in placeholdersapi
+website: https://dreamtime.su/

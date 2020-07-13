@@ -1,0 +1,63 @@
+mysql:
+  host: 'localhost'
+  port: 3306
+  #База данных
+  dreamsait:
+    user: ''
+    password: ''
+
+get-from:
+  #Базы данных
+  dreamsait:
+    #Таблицы
+    AD_GOODS:
+      #Любое ебаное название....
+      govnoedka:
+        #SELECT `cost` FROM `dreamsait`.`AD_GOODS` WHERE `id`=1;
+        select: 'cost'
+        where-what: 'id'
+        where-equals: '1'
+      pizdabolka:
+        select: 'cost'
+        where-what: 'id'
+        where-equals: '2'
+      chlennik:
+        select: 'cost'
+        where-what: 'id'
+        where-equals: '3'
+      syka:
+        select: 'cost'
+        where-what: 'id'
+        where-equals: '4'
+      ebal:
+        select: 'cost'
+        where-what: 'id'
+        where-equals: '5'
+      rot:
+        select: 'cost'
+        where-what: 'id'
+        where-equals: '6'
+      sex:
+        select: 'cost'
+        where-what: 'id'
+        where-equals: '7'
+      elephant:
+        select: 'cost'
+        where-what: 'id'
+        where-equals: '8'
+      kit:
+        select: 'cost'
+        where-what: 'id'
+        where-equals: '9'
+
+#Ответы от запросов свыше
+answers:
+  govnoedka: '35'
+  pizdabolka: '90'
+  chlennik: '140'
+  syka: '220'
+  ebal: '299'
+  rot: '570'
+  sex: '840'
+  elephant: '960'
+  kit: '1200'
