@@ -23,10 +23,11 @@ public class DTMPExtension extends PlaceholderExpansion {
 
     @Override
     public String onRequest(OfflinePlayer p, String params) {
-
-        return params;
+        String answer = DTMySQLPlaceholders.ins.getConfig().getString("answers."+params);
+        if(answer != null) {
+            return answer;
+        }
+        return null;
     }
-
-
 
 }

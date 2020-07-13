@@ -7,8 +7,11 @@ import java.util.Set;
 
 public final class DTMySQLPlaceholders extends JavaPlugin {
 
+    public static DTMySQLPlaceholders ins;
+
     @Override
     public void onEnable() {
+        ins = this;
         saveDefaultConfig();
         if(Bukkit.getPluginManager().getPlugin("PlaceholdersAPI") != null) {
             new DTMPExtension().register();
