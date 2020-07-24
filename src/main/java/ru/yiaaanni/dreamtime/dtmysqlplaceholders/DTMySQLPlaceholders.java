@@ -37,7 +37,10 @@ public final class DTMySQLPlaceholders extends JavaPlugin {
                 String select = getConfig().getString("get-from."+key+"."+code+".select");
                 String whereWhat = getConfig().getString("get-from."+key+"."+code+".where-what");
                 String whereEquals = getConfig().getString("get-from."+key+"."+code+".where-equals");
-                getConfig().set("answers."+code, mysql.get(table, select, whereWhat, whereEquals));
+                String get = mysql.get(table, select, whereWhat, whereEquals);
+                getConfig().set("answers."+code, get);
+                System.out.println("§a[DTMySQLPlaceholders] Хуйскл " + get + " сохранен под кодом "
+                        + code + " в ебаный конфиг этого хуевого плагина.");
             }
 
             try {
@@ -46,6 +49,8 @@ public final class DTMySQLPlaceholders extends JavaPlugin {
                 e.printStackTrace();
             }
         }
+
+        saveConfig();
     }
 
     @Override
