@@ -8,7 +8,7 @@ import java.sql.SQLException;
 public class MySQL {
     private static Database db;
 
-    protected MySQL(String host, String user, String password, int port, String base) {
+    public MySQL(String host, String user, String password, int port, String base) {
         db = new Database(host, port, user, password, base);
     }
 
