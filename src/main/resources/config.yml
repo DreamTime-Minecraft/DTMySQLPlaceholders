@@ -11,48 +11,48 @@ get-from:
   #Базы данных
   dreamsite:
     #Любое ебаное название....
-    govnoedka:
+    vip:
       #SELECT `cost` FROM `dreamsait`.`AD_GOODS` WHERE `id`=1;
       table: 'AD_GOODS'
       select: 'cost'
       where-what: 'id'
       where-equals: '1'
-    pizdabolka:
+    iron:
       table: 'AD_GOODS'
       select: 'cost'
       where-what: 'id'
       where-equals: '2'
-    chlennik:
+    vipp:
       table: 'AD_GOODS'
       select: 'cost'
       where-what: 'id'
       where-equals: '3'
-    syka:
+    gold:
       table: 'AD_GOODS'
       select: 'cost'
       where-what: 'id'
       where-equals: '4'
-    ebal:
+    mvp:
       table: 'AD_GOODS'
       select: 'cost'
       where-what: 'id'
       where-equals: '5'
-    rot:
+    ultra:
       table: 'AD_GOODS'
       select: 'cost'
       where-what: 'id'
       where-equals: '6'
-    sex:
+    mvpp:
       table: 'AD_GOODS'
       select: 'cost'
       where-what: 'id'
       where-equals: '7'
-    elephant:
+    titan:
       table: 'AD_GOODS'
       select: 'cost'
       where-what: 'id'
       where-equals: '8'
-    kit:
+    godlike:
       table: 'AD_GOODS'
       select: 'cost'
       where-what: 'id'
@@ -60,12 +60,12 @@ get-from:
 
 #Ответы от запросов свыше
 answers:
-  govnoedka: '35'
-  pizdabolka: '90'
-  chlennik: '140'
-  syka: '220'
-  ebal: '299'
-  rot: '570'
-  sex: '840'
-  elephant: '960'
-  kit: '1200'
+  vip: '35'
+  iron: '90'
+  vipp: '140'
+  gold: '220'
+  mvp: '299'
+  ultra: '570'
+  mvpp: '840'
+  titan: '960'
+  godlike: '1200'

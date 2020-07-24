@@ -13,11 +13,13 @@ public class MySQL {
     }
 
     public String get(String table, String whereWhat, String whereEquals, String select) {
-        String sql = "SELECT "+select+" FROM `"+table+"` WHERE `"+whereWhat+"`='"+whereEquals+"';";
-        try {
-            ResultSet rs = db.query(sql);
-            String object = (String)rs.getObject(select);
-            return object;
+        String sql = "SELECT `"+select+"` FROM `"+table+"` WHERE `"+whereWhat+"`='"+whereEquals+"';";
+        try (ResultSet rs = db.query(sql)){
+            if(rs.next()) {
+                String object = String.valueOf(rs.getObject(select));
+                //String object = "" + rs.getInt(select);
+                return object;
+            }
         } catch (SQLException ex) {
             ex.printStackTrace();
         }

@@ -3,8 +3,6 @@ package ru.yiaaanni.dreamtime.dtmysqlplaceholders;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.OfflinePlayer;
 
-import java.util.Set;
-
 public class DTMPExtension extends PlaceholderExpansion {
     @Override
     public String getIdentifier() {
