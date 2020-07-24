@@ -12,7 +12,7 @@ public class MySQL {
         db = new Database(host, port, user, password, base);
     }
 
-    protected String get(String table, String whereWhat, String whereEquals, String select) {
+    public String get(String table, String whereWhat, String whereEquals, String select) {
         String sql = "SELECT "+select+" FROM `"+table+"` WHERE `"+whereWhat+"`='"+whereEquals+"';";
         try {
             ResultSet rs = db.query(sql);
@@ -24,7 +24,7 @@ public class MySQL {
         return "NUU";
     }
 
-    protected Database getMamka() {
+    public Database getMamka() {
         return db;
     }
 

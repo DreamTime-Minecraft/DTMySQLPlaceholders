@@ -4,8 +4,8 @@ mysql:
   #База данных
   databases:
     dreamsait:
-      user: ''
-      password: ''
+      user: 'dreamsait'
+      password: 'cZ$jaVoqslhI'
 
 get-from:
   #Базы данных
