@@ -3,13 +3,13 @@ mysql:
   port: 3306
   #База данных
   databases:
-    dreamsait:
+    dreamsite:
       user: 'dreamsait'
       password: 'cZ$jaVoqslhI'
 
 get-from:
   #Базы данных
-  dreamsait:
+  dreamsite:
     #Любое ебаное название....
     govnoedka:
       #SELECT `cost` FROM `dreamsait`.`AD_GOODS` WHERE `id`=1;
