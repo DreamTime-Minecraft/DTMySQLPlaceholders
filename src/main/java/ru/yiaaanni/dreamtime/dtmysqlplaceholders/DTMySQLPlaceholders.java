@@ -13,10 +13,10 @@ public final class DTMySQLPlaceholders extends JavaPlugin {
     public void onEnable() {
         ins = this;
         saveDefaultConfig();
-        if(Bukkit.getPluginManager().getPlugin("PlaceholdersAPI") != null) {
+        if(Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
             new DTMPExtension().register();
         } else {
-            System.out.println("§c[DTMySQLPlaceholders] Установите PlaceholdersAPI для работы данного плагина!");
+            System.out.println("§c[DTMySQLPlaceholders] Установите PlaceholderAPI для работы данного плагина!");
             Bukkit.getPluginManager().disablePlugin(this);
         }
 
