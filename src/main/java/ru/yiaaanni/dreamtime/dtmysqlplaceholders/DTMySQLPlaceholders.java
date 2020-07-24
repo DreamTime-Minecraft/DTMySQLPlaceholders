@@ -28,12 +28,8 @@ public final class DTMySQLPlaceholders extends JavaPlugin {
         int port = getConfig().getInt("mysql.port");
         Set<String> databases = getConfig().getConfigurationSection("mysql.databases").getKeys(false);
         for(String key : databases) {
-            System.out.println("host: "+host);
-            System.out.println("port: "+port);
             String user = getConfig().getString("mysql.databases."+key+".user");
-            System.out.println("user: "+user);
             String password = getConfig().getString("mysql.databases."+key+".password");
-            System.out.println("password: "+password);
             MySQL mysql = new MySQL(host, user, password, port, key);
 
             Set<String> codes = getConfig().getConfigurationSection("get-from."+key).getKeys(false);
